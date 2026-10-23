@@ -1,0 +1,447 @@
+
+/* ========================================
+   LifeLink - Professional Blood Donation
+   ======================================== */
+
+/* Theme colours */
+:root {
+    --primary: #a4133c;
+    --primary-dark: #800f2f;
+    --accent: #ffccd5;
+    --background: #fffafb;
+    --text: #29232a;
+    --muted: #746b73;
+    --border: #f0dfe4;
+}
+
+/* General page styles */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ========================================
+   Navigation bar
+   ======================================== */
+
+.navbar {
+    padding: 16px 0;
+    box-shadow: 0 3px 16px rgba(65, 10, 30, 0.12);
+}
+
+.navbar.bg-danger {
+    background: var(--primary-dark) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navbar .nav-link {
+    margin: 0 4px;
+    padding: 9px 13px !important;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* ========================================
+   Home page hero background
+   Supports both existing class names
+   ======================================== */
+
+.hero,
+.hero-section {
+    background:
+        linear-gradient(
+            rgba(255, 250, 251, 0.15),
+            rgba(255, 250, 251, 0.15)
+        ),
+        url("./images/lifelink-bg.png") center center / cover no-repeat;
+    color: var(--text);
+    padding: 100px 20px;
+    min-height: 500px;
+    text-align: center;
+}
+
+.hero h1,
+.hero-section h1 {
+    color: #521025;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero p,
+.hero-section p {
+    color: #5f5058;
+    font-size: 1.15rem;
+    margin: 20px auto 30px;
+    max-width: 700px;
+}
+
+.hero-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--primary);
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.btn {
+    border-radius: 10px;
+    padding: 11px 22px;
+    font-weight: 600;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+}
+
+.btn-danger {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(164, 19, 60, 0.2);
+}
+
+.btn-outline-danger {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-light {
+    border: 1px solid var(--border);
+}
+
+/* ========================================
+   Feature cards
+   ======================================== */
+
+.feature-card {
+    height: 100%;
+    padding: 30px 24px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(82, 16, 37, 0.06);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(82, 16, 37, 0.13);
+    border-color: #e8b6c5;
+}
+
+.feature-card h3,
+.feature-card h4,
+.feature-card h5 {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 18px;
+    background: #fff0f3;
+    color: var(--primary);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   General cards and headings
+   ======================================== */
+
+.card,
+.donor-card,
+.request-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card,
+.donor-card,
+.request-card {
+    background: #ffffff;
+}
+
+.donor-card,
+.request-card {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.donor-card:hover,
+.request-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(90, 15, 40, 0.09);
+}
+
+.card-title,
+.card h5 {
+    color: var(--primary);
+}
+
+section h2 {
+    color: #521025;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.text-danger {
+    color: var(--primary) !important;
+}
+
+/* ========================================
+   Information section
+   ======================================== */
+
+.info-section {
+    background: #fff1f4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blood-fact-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 36px;
+    box-shadow: 0 8px 25px rgba(90, 15, 40, 0.06);
+}
+
+/* ========================================
+   Forms
+   ======================================== */
+
+.form-label {
+    font-weight: 600;
+    color: #453640;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    border: 1px solid #e5d5dc;
+    border-radius: 9px;
+    background-color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #c45172;
+    box-shadow: 0 0 0 3px rgba(164, 19, 60, 0.10);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa0a6;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+footer.bg-dark {
+    background: #29151e !important;
+    padding: 22px 12px !important;
+    color: #fcecf1 !important;
+}
+
+footer a {
+    color: #ffccd5;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* ========================================
+   Responsive layout
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hero,
+    .hero-section {
+        padding: 65px 18px;
+        min-height: 400px;
+    }
+
+    .hero h1,
+    .hero-section h1 {
+        font-size: 2.25rem;
+    }
+
+    .navbar .nav-link {
+        margin-top: 4px;
+    }
+
+    .feature-card {
+        padding: 24px 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero p,
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .feature-card .btn {
+        width: 100%;
+    }
+
+    .blood-fact-card {
+        padding: 24px;
+    }
+}
+
+/* Bright text on the LifeLink hero background */
+
+.hero h1,
+.hero-section h1 {
+    color: #ffffff !important;
+    font-weight: 800;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero p,
+.hero-section p {
+    color: #fff0f3 !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===== LifeLink Glowing Cursor Fix ===== */
+
+.hero,
+.hero-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.cursor-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 40, 100, 0.45) 0%,
+        rgba(255, 70, 130, 0.25) 30%,
+        rgba(255, 100, 150, 0.10) 55%,
+        transparent 75%
+    );
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    mix-blend-mode: screen;
+}
+
+.hero:hover .cursor-glow,
+.hero-section:hover .cursor-glow {
+    opacity: 1;
+}
+
+/* Keep hero text and buttons above the glow */
+.hero > *:not(.cursor-glow),
+.hero-section > *:not(.cursor-glow) {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ===== LifeLink 3D Card Hover ===== */
+
+.feature-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+    will-change: transform;
+}
+
+.feature-card:hover {
+    box-shadow: 0 18px 35px rgba(164, 19, 60, 0.18);
+    border-color: #e8b6c5;
+}
+
+.feature-card > * {
+    transform: translateZ(12px);
+}
+
+/* Keep interactions comfortable on touch devices */
+@media (hover: none), (prefers-reduced-motion: reduce) {
+    .cursor-glow {
+        display: none;
+    }
+
+    .feature-card,
+    .feature-card:hover {
+        transform: none;
+        will-change: auto;
+    }
+
+    .feature-card > * {
+        transform: none;
+    }
+}
