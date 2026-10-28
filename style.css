@@ -66,7 +66,7 @@ body {
             rgba(255, 250, 251, 0.15),
             rgba(255, 250, 251, 0.15)
         ),
-        url("./images/lifelink-bg.png") center center / cover no-repeat;
+        url("./lifelink-bg.png") center center / cover no-repeat;
     color: var(--text);
     padding: 100px 20px;
     min-height: 500px;
